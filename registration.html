@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homeheader.css">
+    <link href="registration.css" rel="stylesheet">
+<style>
+.maine{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup.active .main{
+    display: block;
+}
+.popup.active .content{
+    transition: all 800ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+.closs-botton{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#popPara{
+    font-size: 25px;
+
+}
+#lorem{
+    font-size: 13px;
+}
+
+
+</style>
+<script>
+    function onclickBtn(){
+        document.getElementById("popup1").classList.toggle("active");
+    }
+</script>
+
+</head>
+<body>
+    <header>
+           
+
+        <ul class="list">
+            <li class="home"><a href="newHome.html">Home</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="contactUS.html">contact</a></li>
+            <li><a href="corsess.html">Corsess</a></li>
+        </ul> 
+    </br>
+        <div class="logo">
+            <h1>TECH ME</h1>
+        </div>
+       
+    </header>
+    <div class="warpper form1">
+        <div class="main">
+            <div class="head"><p>Registration Form</p></div>
+                <div class="form1">
+                    <form>
+                        <p class="name">FIRST NAME :</p>
+                        <p><input type="text" name="FirstName" placeholder="First Name" class="same1" required></p>
+                        <p class="name">LAST NAME :</p>
+                        <p><input type="text" name="LastName" placeholder="Last Name" class="same1" required></p>
+                        <p class="name">GENDER :
+                        <input type="radio" name="gender1"  class="gen" value="m" required>  Male
+                        <input type="radio" name="gender1"  class="gen" value="f" required>  Female
+                        </p>
+                        <p class="name">EMAIL :</p>
+                        <p><input type="email" name="email" placeholder="Email" class="same1" required></p>
+                        <p class="name">NIC NO :</p>
+                        <p><input type="text" name="nic" placeholder="NIC Number" class="same1" required ></p>
+                        <p class="name">PHONE NUMBER :</p>
+                        <p><input type="number" name="phonNumbr" placeholder="Phone Number" class="same1" required ></p>
+                        <p class="name"> DEPARTMENT : 
+                                 <select for="dep" name="department">
+                                     <option value="ICT">ICT</option>
+                                     <option value="ENT">ENT</option>
+                                    <option value="BST">BST</option>
+                                </select>
+                        </p>
+                        <P class="name">CORES NAME :</P>
+                        <p><input type="text" name="corse" placeholder="Corse Name" class="same1" required></P>
+                        <p class="name">PASSWORD :</p>
+                        <p><input type="password" name="password" placeholder="Password" class="same1" required></p>
+                        <input type="submit" value="Submit" onclick="onclickBtn()" class="submit">
+                    </form>
+
+                </div>
+        </div>
+
+    </div>
+    <div class="popup" id="popup1">
+        <div class="maine"></div>
+        <div class="content">
+            <div class="closs-botton" onclick="onclickBtn()">&times;</div><br><br>
+            <p id="popPara">Successfully Data Submitted
+            </p><br>
+            <p id="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur rerum iusto suscipit voluptate amet,
+                          Repellat neque earum eius sit placea
+                          neque earum eius sit placeat quia inventore temporibus accusamus fugit eligendi.</p>
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>
+
+
+
+
+

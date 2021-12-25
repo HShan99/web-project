@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homeheader.css">
+    <style>
+        .image{
+            background: url('./aboutUs.png') no-repeat;
+            background-size: 100%;
+            z-index: -1;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            right: 0;
+            filter: blur(1px);
+            -webkit-filter: blur(1px);
+        }
+        .login_box{
+            width: 390px;
+            height: 400px;
+            background: rgba(0, 0, 0, 0.8) ;
+            color: #fff;
+            top: 21%;
+            left: 35%;
+            position: absolute;
+            padding: 40px 40px;
+            border-radius: 10px;
+        }
+        .h{
+            padding: 10px 0 40px;
+            margin: 0;
+            text-align: center;
+            font-size: 30px;
+            font-family: Arial;
+            font-style: bold;
+            padding-left: 10px;
+        }
+        p{
+            font-family: Arial;
+            font-size: 14px;
+        }
+        .input{
+            border: none;
+            outline: none;
+            height: 30px;
+            width: 100px;
+            background: #1c8adb;
+            color: #fff;
+            font-size: 15px;
+            border-radius: 20px;
+            float: right;
+        }
+        .input:hover{
+            cursor:pointer;
+            background:#39dc79;
+            color:#000;
+        }
+        img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 42px);
+}
+
+    </style>
+</head>
+<body>
+    <div class="image"></div>
+    <header class="hesd">
+            <ul class="list">
+                <li class="home"><a href="newHome.html">Home</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="contactUS.html">contact</a></li>
+                <li><a href="corsess.html">Corsess</a></li>
+            </ul> 
+        </br>
+            <div class="logo">
+                <h1>TECH ME</h1>
+            </div>
+    </header>
+    <div class="login_box">
+        <div class="frm">
+            <img src="sinINicon.png" alt="#">
+            <h1 class="h">About Us</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas reprehenderit commodi nihil deserunt cumque
+                beatae deleniti accusantium amet id illum in itaque rerum sequi a recusandae temporibus odio, tempore expedita
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde possimus vitae vel laudantium illo id nemo conse
+                beatae deleniti accusantium amet id illum in itaque rerum sequi a recusandae temporibus odio, tempore expedita
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde possimus vitae vel laudantium illo id nemo conse
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas reprehenderit commodi nihil deserunt cumque
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde possimus vitae vel laudantium illo id nemo conse
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas reprehenderit commodi nihil deserunt cumque
+                quatur fugiat ut, libero illum enim aut aperiam, blanditiis eveniet nam nihil harum suscipit.
+            </p><br>
+            <input type="button" class="input" value="More...">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        
+    }
+    .image{
+        background: url(./homeImg.jpg);
+        background-size: 100%;
+        z-index: -1;
+        width: 100%;
+        height: 130vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+    }
+    header{
+        width: 100%;
+        height: 90px;
+        background: rgba(0, 0, 0, 0.4);
+        
+
+    }
+    ul{
+        float: right;
+        list-style-type: none;
+        margin-top: 25px;
+
+    }
+    ul li{
+        margin-top: 1.5px;
+        margin-left: 1px;
+        display: inline-block;
+    }
+    ul li a{
+        color: white;
+        padding: 8px 20px;
+        border: 1px white solid;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        transition: 0.7s;
+        background-color: white;
+        color: black;
+   
+    }
+    ul li.home a{
+        transition: none;
+        background-color: white;
+        color: black;
+
+    }
+    .title{
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 160px;
+        margin-left: 460px;
+
+    }
+    .title h1{
+        font-size: 40px;
+        font-family: Arial;
+        color:rgb(255, 255, 255);
+        margin-left: -75px;
+        padding-top: 60px;
+        padding-bottom: 0px;
+    }
+    .para{
+        color:rgb(255, 255, 255) ;
+        margin-left: -75px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .register{
+        margin-right: 212px;
+        padding-top: -150px;
+    }
+    .signIn{
+        display: block;
+    }
+
+    .logo{
+        color: white;
+        border: 2px white solid;
+        width: 200px;
+        text-align: center;
+        margin-left: 7px;
+        
+    }
+    .logo:hover{
+        background-color: grey;
+        color: black;
+        transition: 1s;
+        cursor: pointer;
+    }
+    footer{
+        background: white;
+        bottom: -300px;
+        position: absolute;
+        background-color:#24262b;
+        width: 100%;
+        height: 25vh;
+        color: white;
+    }
+    h3{
+        text-align: center;
+        font-family: Arial;
+        padding-top: 20px;
+        font-size: 29px;
+    }
+    p{
+        text-align: center;
+        font-family: Arial;
+        font-size: 14px;
+    }
+    .copyright{
+        padding-top: 60px;
+
+
+    }
+    </style>
+
+
+</head>
+<body>
+    <div class="image"></div>
+    <header>
+        <header class="hesd">
+           
+
+            <ul class="list">
+                <li class="home"><a href="newHome.html">Home</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="contactUS.html">contact</a></li>
+                <li><a href="corsess.html">Corsess</a></li>
+            </ul> 
+        </br>
+            <div class="logo">
+                <h1>TECH ME</h1>
+            </div>
+            <div class="title">
+            <h1>Welcome To The Techme Institute </h1>
+            <p class="para">We are the best technology institute in sri lanka </p>
+            <ul class="register">
+                <li><a href="registration.html">Register</a></li>
+                <li class="signIN"><a href="signIN.html">Sign In</a></li>
+            </ul>
+            </div>   
+        </header>
+        <footer class="footer1 c">
+            <div class="footer_contain">
+               <h3>Tech Me</h3>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia libero labore itaque, rerum odio dolor</p>
+               <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script>, TechMe.Designed By Shan</p>
+            </div>
+        </footer>
+        
+</body>
+</html>
